@@ -47,28 +47,14 @@
 
         </tr>
         <tr>
-            <td>
-                ProductID
-            </td>
-            <td>
-                ProductName
-            </td>
-            <td>
-                ProductPrice
-            </td>
-            <td>
-                ProductQuantity
-            </td>
-            <td>
-                ProductColor
-            </td>
-            <td>
-                ProductDescription
-            </td>
-            <td>
-                ProductCategoryID
-            </td>
-            <td colspan="2">Functions</td>
+            <td>STT</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Color</td>
+            <td>Description</td>
+            <td>Category</td>
+            <td colspan="2">Action</td>
         </tr>
         <c:forEach items="${products}" var="product">
             <tr>

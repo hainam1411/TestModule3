@@ -28,29 +28,21 @@
     <link rel="stylesheet" href="boostrap/css/bootstrap.css">
     <link rel="stylesheet" href="boostrap/css/mainStyle.css">
 </head>
-
+<body>
 <form method="post">
     <table class="table table-hover">
+       <div class="row">
+           <div class="col-md-11">
+               <h3 class="fw-bold text-start">Product management</h3>
+           </div>
+       </div>
         <tr>
-            <td colspan="6">Create New Product</td>
-        </tr>
-        <tr>
-            <td>
-                ProductName
-            </td>
-            <td>
-                ProductPrice
-            </td>
-            <td>
-                ProductQuantity
-            </td>
-            <td>ProductColor</td>
-            <td>
-                ProductDescription
-            </td>
-            <td>
-                ProductCategoryID
-            </td>
+            <th>ProductName</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Color</th>
+            <th>Description</th>
+            <th>Category</th>
         </tr>
         <tr>
             <td><input type="text" name="productName" size="20"></td>

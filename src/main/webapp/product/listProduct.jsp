@@ -29,16 +29,22 @@
     <link rel="stylesheet" href="boostrap/css/mainStyle.css">
 </head>
 <body>
-<form>
+<form action="#">
+    <div class="row">
+        <div class="col-md-11">
+            <h3 class="fw-bold text-start">Product management</h3>
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-success text-end"><a  href="/productServlet?action=add" style="color: white; text-decoration: none">Create </a></button>
+    </div>
+    </div>
     <input type="text" name="searchName">
     <input type="hidden" name="action" value="search">
-    <button>Search</button>
+    <button class="btn btn-primary">Search</button>
 </form>
 <form action="/productServlet" >
     <table class="table table-hover">
-        <tr>
-            <td colspan="9"><a href="/productServlet?action=add">Create New Product</a></td>
-        </tr>
+
         <tr>
 
             <td colspan="9">
@@ -47,28 +53,14 @@
 
         </tr>
         <tr>
-            <td>
-                ProductID
-            </td>
-            <td>
-                ProductName
-            </td>
-            <td>
-                ProductPrice
-            </td>
-            <td>
-                ProductQuantity
-            </td>
-            <td>
-                ProductColor
-            </td>
-            <td>
-                ProductDescription
-            </td>
-            <td>
-                ProductCategoryID
-            </td>
-            <td colspan="2">Functions</td>
+            <td>STT</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Color</td>
+            <td>Description</td>
+            <td>Category</td>
+            <td colspan="2">Action</td>
         </tr>
         <c:forEach items="${products}" var="product">
             <tr>
