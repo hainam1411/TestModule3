@@ -30,7 +30,7 @@
 </head>
 <body>
 <form action="#">
-    <div class="row">
+    <div class="row p-5">
         <div class="col-md-11">
             <h3 class="fw-bold text-start">Product management</h3>
         </div>
@@ -52,7 +52,7 @@
             </td>
 
         </tr>
-        <tr>
+        <tr class="fw-bold">
             <td>STT</td>
             <td>Name</td>
             <td>Price</td>
